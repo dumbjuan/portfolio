@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Top 5 Images | B-art Gumantason Portfolio</Title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            background-color: #000000;
+            color: #ededed;
+            font-family: sans-serif;
+            padding-bottom: 50px;
+        }
+
+        .header {
+            width: 100%; 
+            display: flex;
+            justify-content: center; 
+            padding: 20px 0; 
+box-shadow: inset 0 150px 100px -10px rgba(0, 0, 0, 0.7);
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 30px; 
+        }
+        
+        .navbar a {
+            color: #ededed;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        
+        .navbar a:hover {
+            color: red;
+            font-size: 19px;
+        }
+        
+        h1 {
+            font-size: 50px;
+            margin-top: 80px; 
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            max-width: 800px; 
+            margin: 0 auto 50px auto; 
+            padding: 20px;
+            background-color: #171717;
+            border-radius: 10px;
+        }
+
+        .grid-item {
+            /* Sets uniform fixed height */
+            height: 300px; 
+            padding: 0; 
+            margin: 0; 
+            overflow: hidden; 
+            border: 1px solid #333;
+            border-radius: 4px;
+        }
+
+        .grid-item img {
+            width: 100%; 
+            height: 100%; 
+            /* Scales and crops image to fit container */
+            object-fit: cover; 
+            margin: 0;
+            padding: 0;
+            display: block; 
+        }
+        
+        .go-back-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 20px;
+            color: #ededed;
+            background-color: transparent;
+            border: 2px solid red;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        
+        .go-back-link:hover {
+            background-color: red;
+            color: #ffffff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <a href="MYPORTFOLIO.html">Home</a>
+            <a href="ABOUT.html" class="active">About</a>
+         <a href="WORKS.html">Experiences</a>
+        <a href="SKILLS.html">Skills</a>
+            <a href="CONTACTS.html">Contacts</a>
+        </nav>
+    </header>
+
+    <center>
+        <h1>Top 5 Images</h1>
+        
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/image 1.jpg" alt="Image 1">
+            </div>
+            <div class="grid-item">
+                <img src="images/image 2.jpg" alt="Image 2">
+            </div>
+            <div class="grid-item">
+                <img src="images/image 3.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item">
+                <img src="images/image 4.jpg" alt="Image 4">
+            </div>
+            <div class="grid-item">
+                <img src="images/image 5.jpg" alt="Image 5">
+            </div>
+        </div>
+
+<a href="ABOUT.html#facts" class="go-back-link">Go Back</a>
+
+    </center>
+</body>
+</html>
